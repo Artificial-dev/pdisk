@@ -31,7 +31,7 @@ class Bot(Client):
             except:
                 self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
                 self.LOGGER(__name__).warning("Please Double check the FORCE_SUB_CHANNEL value and Make sure Bot is Admin in channel with Invite Users via Link Permission")
-                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/RequestStreamTV for support")
+                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/joinchat/GyuI9frXL144ZmQ9 for support")
                 sys.exit()
         try:
             db_channel = await self.get_chat(CHANNEL_ID)
@@ -41,11 +41,11 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__).warning(e)
             self.LOGGER(__name__).warning("Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value")
-            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/RequestStreamTV for support")
+            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/joinchat/GyuI9frXL144ZmQ9 for support")
             sys.exit()
 
         self.set_parse_mode("html")
-        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by OP Bots\nhttps://t.me/OPbots")
+        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by @ArtificialThinkerr Bots\nhttps://t.me/joinchat/7H_9zPG4gbIwOTI1")
         self.username = usr_bot_me.username
 
     async def stop(self, *args):
